@@ -1,0 +1,98 @@
+     please use the <see cref="T:Accord.IO.Serializer"/> class instead.</para>
+            </remarks>
+            
+            <example>
+            <code source="Unit Tests\Accord.Tests.MachineLearning\IO\LibSvmModelTest.cs" region="doc_read" />
+            </example>
+            
+            <seealso cref="T:Accord.MachineLearning.VectorMachines.SupportVectorMachine"/>
+            <seealso cref="T:Accord.MachineLearning.VectorMachines.Learning.SequentialMinimalOptimization"/>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.Solver">
+            <summary>
+              Gets or sets the solver type used to create the model.
+            </summary>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.NumberOfClasses">
+            <summary>
+              Gets or sets the number of classes that
+              this classification model can handle.
+            </summary>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.Classes">
+            <summary>
+              Obsolete. Please use NumberOfClasses instead.
+            </summary>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.Bias">
+            <summary>
+              Gets or sets whether an initial double value should
+              be appended in the beginning of every feature vector.
+              If set to a negative number, this functionality is
+              disabled. Default is 0.
+            </summary>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.NumberOfInputs">
+            <summary>
+              Gets or sets the number of dimensions (features) 
+              the classification or regression model can handle.
+            </summary>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.Dimension">
+            <summary>
+              Obsolete. Please use NumberOfInputs instead.
+            </summary>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.Labels">
+            <summary>
+              Gets or sets the class label for each class
+              this classification model expects to handle.
+            </summary>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.Weights">
+            <summary>
+              Gets or sets the vector of linear weights used
+              by this model, if it is a compact model. If this
+              is not a compact model, this will be set to <c>null</c>.
+            </summary>
+            
+            <seealso cref="P:Accord.MachineLearning.VectorMachines.SupportVectorMachine`2.IsCompact"/>
+            
+        </member>
+        <member name="P:Accord.IO.LibSvmModel.Vectors">
+            <summary>
+              Gets or sets the set of support vectors used
+              by this model. If the model is compact, this
+              will be set to <c>null</c>.
+            </summary>
+            
+            <seealso cref="P:Accord.MachineLearning.VectorMachines.SupportVectorMachine`2.IsCompact"/>
+            
+        </member>
+        <member name="M:Accord.IO.LibSvmModel.#ctor">
+            <summary>
+              Creates a new <see cref="T:Accord.IO.LibSvmModel"/> object.
+            </summary>
+            
+        </member>
+        <member name="M:Accord.IO.LibSvmModel.CreateMachine">
+            <summary>
+              Creates a <see cref="T:Accord.MachineLearning.VectorMachines.SupportVectorMachine"/> that
+              attends the requisites specified in this model.
+            </summary>
+            
+            <returns>A <see cref="T:Accord.MachineLearning.VectorMachines.SupportVectorMachine"/> that represents this model.</returns>
+            
+        </member>
+        <member name="M:Accord.IO.LibSvmModel.CreateAlgorithm">
+            <summary>
+              Creates a <see cref="T:Accord.MachineLearning.VectorMachines.Learning.ILinearSupportVectorMachineLearning"> support
+              vector machine learning algorithm<
